@@ -1,3 +1,30 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.name {
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  font-size: 60px;
+  color: #525252
+}
+
+nav {
+  position: absolute;
+  top: 175px;
+  left: 400px;
+  font-size: 40px;
+  color: #525252;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #525252;
+}
+
 .triangles {
-  height: 500px;
+  height: 400px;
+  width: 450px;
 }
