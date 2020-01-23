@@ -13,20 +13,24 @@
 <body>
     <section class="all" id="top">
         <header class="header">
-            <h1 class="name">Jodi Kansagor</h1>
-            <div class="linkedin">
-                <img src="./assets/linkedin.png" class="contact-img"><a href="https://github.com/jodinkansagor" target="_blank"><h2>/jodikansagor</h2></a>
-            </div>
-            <div class="github">
-                <img src="./assets/github-logo.png" class="contact-img"><a href="https://www.linkedin.com/in/jodikansagor/" target="_blank"><h2>/jodinkansagor</h2></a>
-            </div>
-            <a href = "mailto:jodinkansagor@gmail.com" class="email"><h2 class="email">jodinkansagor@gmail.com</h2></a>
+            <h1 class="name">Jodi 'JBJ' Kansagor</h1>
+            <section class="contact-info">
+                <div class="linkedin">
+                    <img src="./assets/linkedin.png" class="contact-img"><a href="https://github.com/jodinkansagor" target="_blank"><h2 class = "hidden">/jodikansagor</h2></a>
+                </div>
+                <div class="github">
+                    <img src="./assets/github-logo.png" class="contact-img"><a href="https://www.linkedin.com/in/jodikansagor/" target="_blank"><h2 class="hidden">/jodinkansagor</h2></a>
+                </div>
+                <div class="email">
+                <img src="./assets/email.png" class="contact-img"><a href = "mailto:jodinkansagor@gmail.com"><h2 class="hidden">jodinkansagor@gmail.com</h2></a>
+                </div>
+            </section>
         </header>
 
         <section class="content">
       
         <div class="about-me">
-            <h1 id="about">About</h1>
+            <h1 id="about">About Me</h1>
             <section class="about-content">
                 <img src="assets/headshot.jpg" class="headshot">
                 <p>I am a full-stack Software Developer bringing my powerful problem solving skills, creative drive, and passion for accessibility to the tech world. I come to the field with a toolbox of strengths from my career as a scientist, a project manager and a marketing professional. My work is inspired and informed by smart design, efficient analysis, and  increased accessibility.</p>
@@ -63,36 +67,38 @@
 
         </section>
         <h1 id="projects">Projects</h1>
-        <ul>
-            <li>
-                <img class="project-img" src="./assets/markov-twain.png">
-                <section class="tech-stack">
-                    <h4>Node</h4>
-                    <h4>MongoDB</h4>
-                    <h4>Vanilla JS</h4>
-                </section>
-            </li>
-            <li>
+        <ul class="project-list">
+            <li id="cards" class="project-item">
                 <img class="project-img" src="./assets/coffee-and-cards.png">
                 <section class="tech-stack">
-                    <h4>Node</h4>
-                    <h4>MongoDB</h4>
                     <h4>Vanilla JS</h4>
+                    <h4>MongoDB</h4>
+                    <h4>Node</h4>
                 </section>
             </li>
-            <li>
-                <img class="project-img" src="./assets/treksandtrails.png">
+            <li class="project-item markov">
+                <img id="markov" class="project-img" src="./assets/markov-twain.png">
                 <section class="tech-stack">
                     <h4>Node</h4>
                     <h4>MongoDB</h4>
                     <h4>Vanilla JS</h4>
+                </section>
+                <p id="markov-text" class="hidden tech-summary">Node based back end Twitter bot using Markov Chain technology to create predictive text sentences.
+                </p>
+            </li>
+            <li id="trek" class="project-item">
+                <img class="project-img" src="./assets/treksandtrails.png">
+                <section class="tech-stack">
+                    <h4>Vanilla JS</h4>
+                    <h4>PostgreSQL</h4>
+                    <h4>Express</h4>
                 </section>
             </li>
         </ul>
-        <a href="#top"><img class="arrow" src="./assets/arrow.png"</a>
-        </section>
     </section>
-    <script src="app.js"></script>
+    <a href="#top"><img class="arrow" class="hidden" src="./assets/arrow.png"</a>
+    </section>
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
