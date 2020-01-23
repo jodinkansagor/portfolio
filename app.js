@@ -6,9 +6,9 @@ const markovText = document.getElementById('markov-text');
 
 
 
-markov.addEventListener('click', () => {
-    console.log('hello');
-    markovText.classList.toggle('hidden');
-    markov.classList.toggle('lighten');
-});
+// markov.addEventListener('click', () => {
+//     console.log('hello');
+//     markovText.classList.toggle('hidden');
+//     markov.classList.toggle('lighten');
+// });
 

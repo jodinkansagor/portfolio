@@ -22,13 +22,13 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  width: 100%
+  align-items: center;
+  width: 100%;
 }
 
 .header {
   /* height: 100%; */
-  width: 100%;
+  width: 90%;
   background-image: url(./assets/more-triangles.png);
   padding: 20px;
   background-size: cover;
@@ -49,7 +49,7 @@ body {
   height: 40px;
 }
 
-.hidden {
+ .hidden {
   display: none;
 }
 
@@ -99,23 +99,16 @@ p {
 .about-me {
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
 }
 
 #about {
   font-size: 30px;
-  margin: 0px;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  /* width: 100%; */
-  margin-bottom: 50px;
-}
+
 
 .headshot {
   width: 200px;
@@ -183,6 +176,36 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-container {
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+}
+
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.card .back {
+  transform: rotateY(180deg);
 }
 
 .tech-stack {
