@@ -17,13 +17,13 @@
             <h1 class="name">Jodi 'JBJ' Kansagor</h1>
             <section class="contact-info">
                 <section class="linkedin">
-                    <img src="./assets/linkedin.png" class="contact-img"><a href="https://github.com/jodinkansagor" target="_blank"><h2 class = "hidden">/jodikansagor</h2></a>
+                    <a href="https://github.com/jodinkansagor" target="_blank"><img src="./assets/linkedin.png" class="contact-img"><h2 class = "hidden">/jodikansagor</h2></a>
                 </section>
                 <section class="github">
-                    <img src="./assets/github-logo.png" class="contact-img"><a href="https://www.linkedin.com/in/jodikansagor/" target="_blank"><h2 class="hidden">/jodinkansagor</h2></a>
+                    <a href="https://www.linkedin.com/in/jodikansagor/" target="_blank"><img src="./assets/github-logo.png" class="contact-img"><h2 class="hidden">/jodinkansagor</h2></a>
                 </section>
                 <section class="email">
-                <img src="./assets/email.png" class="contact-img"><a href = "mailto:jodinkansagor@gmail.com"><h2 class="hidden">jodinkansagor@gmail.com</h2></a>
+                    <a href = "mailto:jodinkansagor@gmail.com"><img src="./assets/email.png" class="contact-img"><h2 class="hidden">jodinkansagor@gmail.com</h2></a>
                 </section>
             </section>
         </header>
@@ -39,10 +39,12 @@
                 <h2 class="list-title">Technology</h2>
                     <ul>
                         <li>JavaScript</li>
-                        <li>HTML/CSS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                         <li>Node.js</li>
                         <li>Express</li>
-                        <li>Jest/Q-Unit</li>
+                        <li>Jest</li>
+                        </li>Q-Unit</li>
                         <li>SQL / PostgreSQL</li>
                         <li>MongoDb</li>
                         <li>Mongoose</li>
@@ -60,46 +62,39 @@
                             <li>Compass</li>
                             <li>Postman</li>
                         </ul>
+                        <h2 class="list-title">Other Tools</h2>
+                    <ul>
+                        <li>WordPress</li>
+                        <li>ArcGIS</li>
+                        <li>TDD</li>
+                    </ul>
                 </section>
-
             </section>
-            <h1 id="projects">Projects</h1>
+            <h1 id="projects">Select Projects</h1>
             <ul class="project-list">
-                <li id="cards" class="project-item">
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="side"><img class="project-img" src="./assets/coffee-and-cards.png"></div>
-                            <div class="side back"><p>I made this awesome project for my card pulls</p></div>
-                        </div>
-                    </div>
-                    <section class="tech-stack">
-                        <h4>Vanilla JS</h4>
-                        <h4>MongoDB</h4>
-                        <h4>Node</h4>
-                    </section>
+                <li  class="project-item">
+                    <img id="cards" class="project-img" src="./assets/coffee-and-cards.png">
+                    <p class="tech-summary">Daily tarot card tracker that allows the user to track trends in their card readings and store information for each card pulled.</p>
+                    <p class="stack">Tech: Node, Express, Vanilla JS, HTML, CSS</p>
                 </li>
                 <li class="project-item markov">
                     <img id="markov" class="project-img" src="./assets/markov-twain.png">
-                    <section class="tech-stack">
-                        <h4>Node</h4>
-                        <h4>MongoDB</h4>
-                        <h4>Vanilla JS</h4>
-                    </section>
-                    <p id="markov-text" class="hidden tech-summary">Node based back end Twitter bot using Markov Chain technology to create predictive text sentences.
+                    <p class="tech-summary">Node based back end Twitter bot using Markov Chain technology to create predictive text sentences.
+                    <p class="stack">Tech: Node, Express, MongoDB, Mongoose, HTML, CSS, Vanilla JS
                     </p>
                 </li>
                 <li id="trek" class="project-item">
                     <img class="project-img" src="./assets/treksandtrails.png">
-                    <section class="tech-stack">
-                        <h4>Vanilla JS</h4>
-                        <h4>PostgreSQL</h4>
-                        <h4>Express</h4>
-                    </section>
+                    <p class=tech-summary>Combined information from 5 different 3rd party APIs to create informative front end hike and camping search site.</p>
+                    <p class="stack">Tech: Vanilla JS, HTML, CSS, SQL, Postgres, Node, Express</p>
                 </li>
             </ul>
         </section>
     <!-- <a href="#top"><img class="arrow" class="hidden" src="./assets/arrow.png"</a> -->
     </section>
+    <footer>
+        <p>&copy 2020 Jodi 'JBJ' Kansagor</p>
+    </footer>
     <script type="module" src="app.js"></script>
 </body>
 
