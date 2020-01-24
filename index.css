@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
   margin: 0;
@@ -21,10 +25,8 @@ body {
 }
 
 .header {
-  /* height: 100%; */
   padding: 20px;
   background-size: cover;
-  /* margin-right: 10px; */
   border-bottom: solid 5px #116466;
 }
 
@@ -129,11 +131,6 @@ p {
   width: 90%
 }
 
-
-ul { 
-  padding: 0px;
-}
-
 .list-title {
   font-size: 20px;
   text-decoration: underline;
@@ -156,7 +153,6 @@ li {
 }
 
 .project-img {
-  /* border-radius: 15px; */
   width: 80%;
 }
 
@@ -164,6 +160,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px;
 }
 
 .project-item {
@@ -207,3 +204,37 @@ footer p {
   padding-top: 5px;
   width: 70%;
 }
+
+@media (min-width: 414px) {
+
+}
+
+@media (min-width: 850px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about-me {
+    flex-direction: row;
+  }
+
+  .about-me p {
+    font-size: 20px;
+  }
+
+  .about-me img {
+    margin-right: 10px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all {
+    width: 80%;
+  }
+}
+
