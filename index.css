@@ -259,6 +259,10 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .project-item {
+    height: 350px;
+  }
+
   .experience {
     width: 450px;
   }
