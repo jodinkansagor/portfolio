@@ -1,0 +1,282 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  padding: 20px;
+  background-size: cover;
+  border-bottom: solid 5px #116466;
+}
+
+.name {
+  font-size: 35px;
+  color: #116466;
+  margin: 0;
+  margin-top: 10px;
+  /* margin-left: 20px; */
+}
+
+.contact-img {
+  width: 40px;
+  height: 40px;
+}
+
+ .hidden {
+  display: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.linkedin, .github, .email {
+  display: flex;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.email, .linkedin, .github {
+  /* margin-left: 20px;; */
+}
+
+.email {
+  color: #2c3531;
+  text-decoration-color: #2c3531;
+  font-size: 15px;
+}
+
+.linkedin a, .github a, .email a {
+  text-decoration-color: #2c3531;
+}
+
+.linkedin h2, .github h2, .email h2 {
+  margin: 0;
+  margin-left: 5px;
+  color: #2c3531;
+  font-size: 15px
+}
+
+#experience-sidebar {
+  display: none
+}
+
+.experience-sidebar {
+  display: none
+}
+
+p {
+  font-size: 15px;
+  color: #2c3531
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+#about {
+  font-size: 30px;
+}
+
+
+.headshot {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100%;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  padding: 10px
+}
+
+
+#experience, #projects {
+  font-size: 25px;
+  margin: 0px;
+  color: #2c3531
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  width: 90%
+}
+
+.list-title {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #116466
+}
+
+li {
+  font-size: 18px;
+  list-style: none;
+  color: #2c3531
+
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 5%;
+  left: 80%
+}
+
+.project-img {
+  width: 80%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #116466;
+  width: 95%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.tech-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tech-summary {
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.stack {
+  width: 80%;
+  margin-top: 0px;
+  color: #116466;
+}
+
+.site-links a {
+  color: #116466
+}
+
+
+@media (min-width: 800px) {
+
+  .about-me p {
+    font-size: 20px;
+  }
+
+  .about-me img {
+    margin-right: 10px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all {
+    width: 80%;
+    display: grid;
+    grid-template-columns: .5fr 5fr;
+  }
+
+  .header {
+    border-bottom: none;
+    border-right: 3px solid #116466;   
+  }
+
+  /* .sticky-name {
+    position: sticky;
+    top: 30px 
+  } */
+
+  #experience {
+    display: none;
+  }
+  .experience {
+    display: none;
+  }
+
+  #experience-sidebar {
+    display: block;
+  }
+  
+  .experience-sidebar {
+    display: block;
+  }
+
+  ul {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .experience {
+    width: 450px;
+  }
+
+  ul {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-me {
+    flex-direction: row;
+  }
+
+
+
+  footer p {
+    border: none;
+  }
+}
+
