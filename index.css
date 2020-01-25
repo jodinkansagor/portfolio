@@ -35,7 +35,7 @@ body {
   color: #116466;
   margin: 0;
   margin-top: 10px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .contact-img {
@@ -45,10 +45,6 @@ body {
 
  .hidden {
   display: none;
-}
-
-.lighten { 
-  opacity: 10%;
 }
 
 .contact-info {
@@ -65,7 +61,7 @@ body {
 }
 
 .email, .linkedin, .github {
-  margin-left: 20px;;
+  /* margin-left: 20px;; */
 }
 
 .email {
@@ -83,6 +79,14 @@ body {
   margin-left: 5px;
   color: #2c3531;
   font-size: 15px
+}
+
+#experience-sidebar {
+  display: none
+}
+
+.experience-sidebar {
+  display: none
 }
 
 p {
@@ -105,8 +109,8 @@ p {
 
 
 .headshot {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 100%;
 }
 
@@ -192,32 +196,12 @@ li {
   color: #116466;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.site-links a {
+  color: #116466
 }
 
-footer p {
-  text-align: center;
-  border-top: 1px solid #2c3531;
-  padding-top: 5px;
-  width: 70%;
-}
 
-@media (min-width: 414px) {
-
-}
-
-@media (min-width: 850px) {
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .about-me {
-    flex-direction: row;
-  }
+@media (min-width: 800px) {
 
   .about-me p {
     font-size: 20px;
@@ -235,6 +219,64 @@ footer p {
 
   .all {
     width: 80%;
+    display: grid;
+    grid-template-columns: .5fr 5fr;
+  }
+
+  .header {
+    border-bottom: none;
+    border-right: 3px solid #116466;   
+  }
+
+  /* .sticky-name {
+    position: sticky;
+    top: 30px 
+  } */
+
+  #experience {
+    display: none;
+  }
+  .experience {
+    display: none;
+  }
+
+  #experience-sidebar {
+    display: block;
+  }
+  
+  .experience-sidebar {
+    display: block;
+  }
+
+  ul {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .experience {
+    width: 450px;
+  }
+
+  ul {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-me {
+    flex-direction: row;
+  }
+
+
+
+  footer p {
+    border: none;
   }
 }
 
