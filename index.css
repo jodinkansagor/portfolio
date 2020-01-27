@@ -148,6 +148,14 @@ li {
 
 }
 
+/* .creature {
+  border: solid 2px #2c3531;
+} */
+
+ul {
+  padding: 10px;
+}
+
 .arrow {
   width: 40px;
   height: 40px;
@@ -259,6 +267,10 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .other-stuff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .project-item {
     height: 350px;
   }
